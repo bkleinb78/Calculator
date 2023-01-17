@@ -1,0 +1,101 @@
+/* theme 1 */
+
+/* =================== global variables =================== */
+:root {
+	/* ---------- background ---------- */
+	--first-main-bg: hsl(222, 26%, 31%);
+	--first-tog-bg: hsl(223, 31%, 20%);
+
+	/* ---------- keys ---------- */
+	--first-key-background: hsl(225, 21%, 49%);
+	--first-key-light: hsl(224, 51%, 76%);
+	--first-key-shadow: hsl(224, 28%, 35%);
+
+	--first-red: hsl(6, 63%, 50%);
+	--first-light-red: hsl(6, 93%, 67%);
+	--first-dark-red: hsl(6, 70%, 34%);
+
+	--first-light-orange-grey: hsl(30, 25%, 89%);
+	--first-orange-grey: hsl(28, 16%, 65%);
+
+	/* ---------- text ---------- */
+	--first-dark-grey-blue: hsl(221, 14%, 31%);
+	--first-white: hsl(0, 0%, 100%);
+}
+
+/* =================== reset default styles =================== */
+body {
+	background-color: var(--first-main-bg);
+	color: var(--first-white);
+}
+
+/* =================== font styles =================== */
+input[type=text] {
+	color: var(--first-white);
+}
+
+.number {
+	color: var(--first-dark-grey-blue);
+	background-color: var(--first-light-orange-grey);
+	box-shadow: 0px 4px var(--first-orange-grey);
+}
+
+.number:hover {
+	background-color: var(--first-white);
+}
+
+#del, #reset {
+	color: var(--first-white);
+	background-color: var(--first-key-background);
+	box-shadow: 0px 4px var(--first-key-shadow);
+}
+
+#del:hover, #reset:hover {
+	background-color: var(--first-key-light);
+}
+
+#eq {
+	color: var(--first-white);
+	background-color: var(--first-red);
+	box-shadow: 0px 4px var(--first-dark-red);
+}
+
+#eq:hover {
+	background-color: var(--first-light-red);
+}
+
+/* =================== constants =================== */
+.title-container a {
+	color: var(--first-white);
+}
+
+#toggle {
+	background-color: var(--first-tog-bg);
+}
+
+#circle {
+	background-color: var(--first-red);
+}
+
+#circle:hover {
+	background-color: hsl(4, 88%, 67%);
+}
+
+/* ---------- output container ---------- */
+.calc-output-container input {
+	background-color: var(--first-tog-bg);
+}
+
+/* ---------- calculator ---------- */
+.calculator {
+	background-color: var(--first-tog-bg);
+}
+
+#reset, #eq {
+	grid-column: span 2;
+}
+
+/* ---------- attribution ---------- */
+.attribution, .attribution a {
+	color: var(--first-tog-bg);
+}

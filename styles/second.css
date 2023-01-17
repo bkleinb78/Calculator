@@ -1,0 +1,100 @@
+/* theme 2 */
+
+/* =================== global variables =================== */
+:root {
+
+	/* ---------- background ---------- */
+	--second-main-bg: hsl(0, 0%, 90%);
+	--second-grey-red: hsl(0, 5%, 81%);
+	--second-very-light-grey: hsl(0, 0%, 93%);
+
+	/* ---------- keys ---------- */
+	--second-key-dark-cyan: hsl(185, 42%, 37%);
+	--second-key-very-dark-cyan: hsl(185, 58%, 25%);
+	--second-light-cyan: hsl(185, 41%, 56%);
+
+	--second-key-orange: hsl(25, 98%, 40%);
+	--second-key-dark-orange: hsl(25, 99%, 27%);
+	--second-key-light-orange: hsl(25, 100%, 61%);
+
+	--second-key-light-grey-yellow: hsl(45, 7%, 89%);
+	--second-key-dark-grey-orange: hsl(35, 11%, 61%);
+
+	/* ---------- text ---------- */
+	--second-text-very-dark-grey-yellow: hsl(60, 10%, 19%);
+	--second-text-white: hsl(0, 0%, 100%);
+}
+
+/* =================== reset default styles =================== */
+body {
+	background-color: var(--second-light-grey);
+	color: var(--second-text-very-dark-grey-yellow);
+}
+
+/* =================== font styles =================== */
+input[type=text] {
+	color: var(--second-text-very-dark-grey-yellow);
+}
+
+.number {
+	color: var(--second-text-very-dark-grey-yellow);
+	background-color: var(--second-key-light-grey-yellow);
+	box-shadow: 0px 4px var(--second-key-dark-grey-orange);
+}
+
+.number:hover {
+	background-color: var(--second-text-white);
+}
+
+#del, #reset {
+	color: var(--second-text-white);
+	background-color: var(--second-key-dark-cyan);
+	box-shadow: 0px 4px var(--second-key-very-dark-cyan);
+}
+
+#del:hover, #reset:hover {
+	background-color: var(--second-light-cyan);
+}
+
+#eq {
+	color: var(--second-text-white);
+	background-color: var(--second-key-orange);
+	box-shadow: 0px 4px var(--second-key-dark-orange);
+}
+
+#eq:hover {
+	background-color: var(--second-key-light-orange);
+}
+
+/* =================== constants =================== */
+.title-container a {
+	color: var(--second-text-very-dark-grey-yellow);
+}
+
+#toggle {
+	background-color: var(--second-grey-red);
+}
+
+#circle {
+	background-color: var(--second-key-orange);
+	left: 23px;
+}
+
+#circle:hover {
+	background-color: var(--second-key-light-orange);
+}
+
+/* ---------- output container ---------- */
+.calc-output-container input {
+	background-color: var(--second-very-light-grey);
+}
+
+/* ---------- calculator ---------- */
+.calculator {
+	background-color: var(--second-grey-red);
+}
+
+/* ---------- attribution ---------- */
+.attribution, .attribution a {
+	color: var(--second-key-dark-grey-orange);
+}

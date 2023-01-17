@@ -1,0 +1,109 @@
+/* theme 3 */
+
+/* =================== global variables =================== */
+:root {
+
+	/* ---------- background ---------- */
+	--third-main-bg: hsl(270deg 78% 9%);
+	/* toggle, calculator, calculator input */
+	--third-key-very-dark-violet: hsl(268deg 71% 12%);
+	
+
+	/* ---------- keys ---------- */
+	/* .numbers */
+	--third-key-dark-violet: hsl(270deg 48% 20%);
+	--third-key-shadow-light-magenta:hsl(289deg 66% 37%);
+	--third-key-hover-light-violet: hsl(268deg 54% 44%);
+
+	/* del, reset */
+	--third-key-vivid-magenta: hsl(280deg 88% 24%);
+	--third-key-shadow-vivid-magenta: hsl(285, 91%, 52%);
+	--third-key-hover-light-magenta: hsl(280deg 56% 44%);
+
+	
+	/* equals btn */
+	--third-key-pure-cyan: hsl(176, 100%, 44%);
+	--third-key-shadow-soft-cyan: hsl(177, 92%, 70%);
+	--third-key-hover-light-cyan: hsl(177deg 99% 79%);
+
+
+
+	/* ---------- text ---------- */
+	--third-text-light-yellow: hsl(52, 100%, 62%);
+	--third-text-very-dark-blue: hsl(198, 20%, 13%);
+	--third-text-white: hsl(0, 0%, 100%);
+}
+
+/* =================== reset default styles =================== */
+body {
+	background-color: var(--third-main-bg);
+	color: var(--third-text-light-yellow);
+}
+
+/* =================== font styles =================== */
+input[type=text] {
+	color: var(--third-text-light-yellow);
+}
+
+.number {
+	color: var(--third-text-light-yellow);
+	background-color: var(--third-key-dark-violet);
+	box-shadow: 0px 4px var(--third-key-shadow-light-magenta);
+}
+
+.number:hover {
+	background-color: var(--third-key-hover-light-violet);
+}
+
+#del, #reset {
+	color: var(--third-text-white);
+	background-color: var(--third-key-vivid-magenta);
+	box-shadow: 0px 4px var(--third-key-shadow-vivid-magenta);
+}
+
+#del:hover, #reset:hover {
+	background-color: var(--third-key-hover-light-magenta);
+}
+
+#eq {
+	color: var(--third-text-very-dark-blue);
+	background-color: var(--third-key-pure-cyan);
+	box-shadow: 0px 4px var(--third-key-shadow-soft-cyan);
+}
+
+#eq:hover {
+	background-color: var(--third-key-hover-light-cyan);
+}
+
+/* =================== constants =================== */
+.title-container a {
+	color: var(--third-text-light-yellow);
+}
+
+#toggle {
+	background-color: var(--third-key-very-dark-violet);
+}
+
+#circle {
+	background-color: var(--third-key-pure-cyan);
+	left: 46px;
+}
+
+#circle:hover {
+	background-color: var(--third-key-shadow-soft-cyan);
+}
+
+/* ---------- output container ---------- */
+.calc-output-container input {
+	background-color: var(--third-key-very-dark-violet);
+}
+
+/* ---------- calculator ---------- */
+.calculator {
+	background-color: var(--third-key-very-dark-violet);
+}
+
+/* ---------- attribution ---------- */
+.attribution, .attribution a {
+	color: var(--third-key-shadow-light-magenta);
+}
