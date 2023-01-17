@@ -1,0 +1,253 @@
+/* =================== imported fonts =================== */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
+/* =================== global variables =================== */
+:root {
+	--std-transition: all .2s ease-in-out;
+}
+
+/* =================== reset default styles =================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+}
+
+
+/* =================== base page styles =================== */
+/* =================== font styles =================== */
+button, input[type=text] {
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 700;
+}
+
+input[type=text] {
+	font-size: 55px;
+}
+
+h2 {
+	font-size: 30px;
+	text-transform: lowercase;
+}
+
+h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	transition: var(--std-transition);
+	cursor: pointer;
+}
+
+.number {
+	width: 100%;
+	height: 100%;
+
+	font-size: 48px;
+	border: none;
+	border-radius: 10px;
+	padding: 5px 33px;
+	cursor: pointer;
+}
+
+#del, #reset {
+	width: 100%;
+	height: 100%;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+#eq {
+	width: 100%;
+	height: 100%;
+	font-size: 32px;
+	padding: 18px;
+}
+
+/* =================== constants =================== */
+section.main-grid {
+	display: grid;
+}
+
+/* ---------- calculator container ---------- */
+section.calculator-container {
+	display: grid;
+	grid-template-rows: min-content;
+	gap: 1rem;
+	margin: .5rem 0;
+	
+}
+
+.header-container, .calc-output-container, .calculator {
+	grid-row: span 1;
+}
+
+/* ---------- header container ---------- */
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ---------- theme toggle container ---------- */
+.theme-toggle-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.theme-toggle-container div {
+	grid-column: span 1;
+}
+
+.theme-header {
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.theme-toggle {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.theme-toggle-numbers {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: baseline;
+}
+
+#toggle {
+	width: 76px;
+	height: 28px;
+	margin: 5px 0 0 0;
+	padding: 6px;
+	border-radius: 10000px;
+	cursor: pointer;
+}
+
+#circle {
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+}
+
+/* ---------- output container ---------- */
+.calc-output-container input {
+	width: 100%;
+	height: 8rem;
+	padding: 1rem;
+	border: none;
+	border-radius: 10px;
+	text-align: right;
+}
+
+/* ---------- calculator ---------- */
+.calculator {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	
+	border-radius: 10px;
+	padding: 1.5rem;
+}
+
+#reset, #eq {
+	grid-column: span 2;
+}
+
+/* ---------- attribution ---------- */
+.attribution, .attribution a {
+	font-size: 12px;
+}
+
+/* =================== media queries =================== */
+
+/* =================== MOBILE =================== */
+@media only screen and (max-width: 40em) {
+	section.main-grid {
+		grid-template-columns: repeat(4, 1fr);
+		margin: 1rem;
+	}
+
+	section.calculator-container, .attribution {
+		grid-column: span 4;
+	}
+
+	input[type=text] {
+		font-size: calc(55px - 1rem);
+	}
+
+	.calc-output-container input {
+		height: calc(8rem - 1rem);
+		padding: 1rem;
+	}
+
+	.number {
+		font-size: calc(48px - 1rem);
+		padding: calc(5px - 0rem) calc(33px - 1rem);
+	}
+	
+	#del, #reset {
+		font-size: calc(32px - 1rem);
+	}
+	
+	#eq {
+		font-size: calc(32px - 1rem);
+		padding: calc(18px - .5rem);
+	}
+}
+
+/* =================== TABLET =================== */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	section.main-grid {
+		grid-template-columns: repeat(6, 1fr);
+		margin: 1rem;
+	}
+
+	section.calculator-container, .attribution {
+		grid-column: 2 / 6;
+	}
+}
+
+/* =================== DESKTOP =================== */
+@media only screen and (min-width: 64.063em) {
+	section.main-grid {
+		grid-template-columns: repeat(11, 1fr);
+		margin: 1rem 0;
+	}
+
+	/* ---------- grids ---------- */
+	section.calculator-container {
+		grid-column: 4 / 9;
+		padding: 0 4rem;
+	}
+
+	.attribution {
+		grid-column: 4 / 9;
+	}
+
+	/* ---------- attribution container ---------- */
+	.attribution a:hover {
+		transition: var(--std-transition);
+	}
+
+}
+
