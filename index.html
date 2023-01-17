@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+	<title>Frontend Mentor | Calculator app</title>
+
+	<!-- main style -->
+	<link rel="stylesheet" href="index.css">
+
+	<!-- theme styles -->
+	<link id="theme-link" rel="stylesheet" href="./styles/first.css">
+
+	<!-- jQuery CDN -->
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+	<!-- jquery ui -->
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<section class="main-grid">
+
+		<section class="calculator-container">
+
+			<div class="header-container">
+
+				<div class="title-container">
+					<h2>
+						<a href="index.html">Calc</a>
+					</h2>
+				</div>
+
+				<div class="theme-toggle-container">
+					<div class="theme-header">
+						<h3>Theme</h3>
+					</div>
+
+					<div class="theme-toggle">
+						<div class="theme-toggle-numbers">
+							<h3>1</h3>
+							<h3>2</h3>
+							<h3>3</h3>
+						</div>
+
+						<div id="toggle">
+							<div id="circle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="calc-output-container">
+				<input type="text" name="" id="output" value="0" disabled>
+			</div>
+
+			<div class="calculator">
+				
+				<!-- data attribute HTML -->
+				<button id="seven" class="number data">7</button>
+				<button id="eight" class="number data">8</button>
+				<button id="nine" class="number data">9</button>
+
+				<button id="del" class="number del">DEL</button>
+
+				<button id="four" class="number data">4</button>
+				<button id="five" class="number data">5</button>
+				<button id="six" class="number data">6</button>
+
+				<button id="plus" class="number data">+</button>
+
+				<button id="one" class="number data">1</button>
+				<button id="two" class="number data">2</button>
+				<button id="three" class="number data">3</button>
+
+				<button id="minus" class="number data">-</button>
+
+				<button id="dot" class="number data">.</button>
+				<button id="zero" class="number data">0</button>
+
+				<button id="div" class="number data">/</button>
+				<button id="mul" class="number data">x</button>
+				<button id="reset" class="number res">RESET</button>
+				<button id="eq" class="number equ">=</button>
+			</div>
+			
+		</section>
+
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Brian Kleinberg</a>.
+		</div>
+
+	</section>
+</body>
+
+<script src="index.js"></script>
+</html>
